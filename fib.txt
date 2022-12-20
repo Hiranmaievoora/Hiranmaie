@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class fib
+{
+    public static void main(String args[])
+    {
+         int n1=0,n2=1,i,n3,count;
+        System.out.println("enter the count");
+        Scanner s=new Scanner(System.in);
+        count=s.nextInt();
+        System.out.println(n1+" "+n2);
+        for(i=2;i<count;++i)
+        {
+            n3=n1+n2;
+            System.out.println(" "+n3);
+            n1=n2;
+            n2=n3;
+
+        }
+
+    }
+}
+"C:\Program Files\Java\jdk-19\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\lib\idea_rt.jar=64860:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Hello\IdeaProjects\prime.c\out\production\prime.c fib
+enter the count
+15
+0 1
+ 1
+ 2
+ 3
+ 5
+ 8
+ 13
+ 21
+ 34
+ 55
+ 89
+ 144
+ 233
+ 377
+
+Process finished with exit code 0
+
+
